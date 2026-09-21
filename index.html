@@ -1,133 +1,524 @@
-<html>
-        <head><title>Downloaded HTML</title></head>
-        <body>
-            <pre style="white-space: pre-wrap; word-wrap: break-word;"><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn about P999 Game APK, its latest 2026 version, features, installation considerations, and responsible use.">
-  <title>P999 Game Apk: Download Latest Version 2026</title>
+
+  <title>P999 Game APK: Download Latest Version 2026</title>
+
+  <meta name="description"
+        content="Explore P999 Game APK, its latest 2026 features, Android installation guide, compatibility information, and important safety considerations.">
+
+  <meta name="keywords"
+        content="P999, P999 Game, P999 Game APK, P999 APK Download, P999 Game 2026">
 
   <style>
+    :root {
+      --primary: #6d5dfc;
+      --primary-dark: #5145d8;
+      --secondary: #00c6a7;
+      --dark: #101828;
+      --text: #475467;
+      --muted: #667085;
+      --light: #f7f8fc;
+      --border: #e7e9f2;
+      --white: #ffffff;
+      --success: #12b76a;
+    }
+
     * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      margin: 0;
-      padding: 30px 15px;
       font-family: Arial, Helvetica, sans-serif;
-      background: #f3f6fa;
-      color: #263238;
-      line-height: 1.75;
-    }
-
-    .page {
-      max-width: 900px;
-      margin: 0 auto;
-      background: #ffffff;
-      border: 1px solid #e2e8f0;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
-    }
-
-    .hero {
-      padding: 48px 35px;
-      text-align: center;
-      background: linear-gradient(135deg, #172554, #1d4ed8);
-      color: #ffffff;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 34px;
-      line-height: 1.25;
-    }
-
-    .subtitle {
-      margin: 14px auto 0;
-      max-width: 700px;
-      font-size: 16px;
-      opacity: 0.92;
-    }
-
-    .content {
-      padding: 35px;
-    }
-
-    h2 {
-      margin: 28px 0 12px;
-      color: #172554;
-      font-size: 24px;
-      line-height: 1.35;
-    }
-
-    h2:first-child {
-      margin-top: 0;
-    }
-
-    p {
-      margin: 0 0 18px;
-      font-size: 16px;
-    }
-
-    ul {
-      margin: 12px 0 22px;
-      padding-left: 24px;
-    }
-
-    li {
-      margin-bottom: 8px;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(109,93,252,.10), transparent 28%),
+        radial-gradient(circle at 90% 20%, rgba(0,198,167,.08), transparent 25%),
+        #f6f7fb;
+      color: var(--text);
+      line-height: 1.7;
     }
 
     a {
-      color: #1d4ed8;
-      font-weight: 700;
+      color: inherit;
       text-decoration: none;
     }
 
-    a:hover {
-      text-decoration: underline;
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: auto;
     }
 
-    .note {
-      margin-top: 25px;
-      padding: 20px;
-      background: #eff6ff;
-      border-left: 4px solid #2563eb;
-      border-radius: 8px;
+    /* TOP BAR */
+
+    .topbar {
+      padding: 15px 0;
+      background: rgba(255,255,255,.82);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 20;
     }
 
-    .footer {
-      padding: 18px 35px;
-      text-align: center;
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--dark);
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      box-shadow: 0 8px 20px rgba(109,93,252,.25);
+    }
+
+    .top-link {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 75px 0 55px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 13px;
+      border-radius: 50px;
+      background: #eeecff;
+      color: var(--primary-dark);
       font-size: 13px;
-      color: #64748b;
-      background: #f8fafc;
-      border-top: 1px solid #e2e8f0;
+      font-weight: 800;
+      margin-bottom: 18px;
     }
 
-    @media (max-width: 650px) {
-      body {
-        padding: 12px;
+    .badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--secondary);
+    }
+
+    h1 {
+      color: var(--dark);
+      font-size: clamp(38px, 5vw, 62px);
+      line-height: 1.08;
+      letter-spacing: -1.8px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(90deg, var(--primary), #9b8cff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-text {
+      max-width: 680px;
+      font-size: 18px;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 13px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      padding: 14px 22px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 15px;
+      transition: .25s ease;
+    }
+
+    .btn-primary {
+      color: white;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      box-shadow: 0 12px 28px rgba(109,93,252,.25);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 35px rgba(109,93,252,.35);
+    }
+
+    .btn-light {
+      background: white;
+      color: var(--dark);
+      border: 1px solid var(--border);
+    }
+
+    .btn-light:hover {
+      transform: translateY(-2px);
+      border-color: #cfd2df;
+    }
+
+    /* APP CARD */
+
+    .app-card {
+      background: rgba(255,255,255,.92);
+      border: 1px solid var(--border);
+      border-radius: 26px;
+      padding: 27px;
+      box-shadow: 0 25px 70px rgba(16,24,40,.10);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .app-card::before {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: rgba(109,93,252,.12);
+      top: -80px;
+      right: -70px;
+    }
+
+    .app-logo {
+      width: 78px;
+      height: 78px;
+      display: grid;
+      place-items: center;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #7566ff, #5145d8);
+      color: white;
+      font-size: 30px;
+      font-weight: 900;
+      margin-bottom: 18px;
+      box-shadow: 0 15px 30px rgba(81,69,216,.25);
+    }
+
+    .app-card h2 {
+      color: var(--dark);
+      font-size: 25px;
+      margin-bottom: 6px;
+    }
+
+    .app-card-sub {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 22px;
+    }
+
+    .app-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px;
+    }
+
+    .info-item {
+      padding: 13px;
+      background: var(--light);
+      border-radius: 12px;
+      border: 1px solid #eef0f5;
+    }
+
+    .info-item small {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      margin-bottom: 3px;
+    }
+
+    .info-item strong {
+      color: var(--dark);
+      font-size: 14px;
+    }
+
+    /* MAIN CARD */
+
+    .main-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: 0 15px 50px rgba(16,24,40,.06);
+      overflow: hidden;
+      margin-bottom: 45px;
+    }
+
+    .article {
+      padding: 45px;
+    }
+
+    h2 {
+      color: var(--dark);
+      font-size: 29px;
+      line-height: 1.25;
+      margin: 0 0 15px;
+    }
+
+    h3 {
+      color: var(--dark);
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 19px;
+    }
+
+    .article a {
+      color: var(--primary-dark);
+      font-weight: 800;
+    }
+
+    .intro {
+      font-size: 17px;
+    }
+
+    /* FEATURE GRID */
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin: 28px 0 42px;
+    }
+
+    .feature {
+      padding: 23px;
+      background: #fafaff;
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      transition: .25s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(16,24,40,.07);
+    }
+
+    .feature-icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: #eeecff;
+      color: var(--primary-dark);
+      font-weight: 900;
+      margin-bottom: 13px;
+    }
+
+    .feature p {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    /* STEPS */
+
+    .steps {
+      display: grid;
+      gap: 13px;
+      margin: 25px 0 38px;
+    }
+
+    .step {
+      display: flex;
+      gap: 17px;
+      align-items: flex-start;
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: #fff;
+    }
+
+    .step-number {
+      min-width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--primary);
+      color: white;
+      font-weight: 900;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* NOTE */
+
+    .notice {
+      padding: 22px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #f0fdf9, #f6fffc);
+      border: 1px solid #c8f0e4;
+      margin: 28px 0;
+    }
+
+    .notice strong {
+      color: #087f63;
+    }
+
+    /* FAQ */
+
+    .faq {
+      margin-top: 28px;
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 17px 19px;
+      background: #fafbfc;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--dark);
+      font-weight: 800;
+    }
+
+    details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* CTA */
+
+    .cta {
+      margin: 0 45px 45px;
+      padding: 34px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #161c38, #29245b);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .cta h2 {
+      color: white;
+      margin-bottom: 8px;
+      font-size: 25px;
+    }
+
+    .cta p {
+      color: #c8cce0;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .cta .btn {
+      background: white;
+      color: #332b91;
+      white-space: nowrap;
+    }
+
+    /* FOOTER */
+
+    footer {
+      text-align: center;
+      padding: 28px 15px;
+      color: #7a8496;
+      font-size: 13px;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 850px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .cta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: min(100% - 20px, 1120px);
       }
 
       .hero {
-        padding: 35px 20px;
+        padding: 50px 0 35px;
       }
 
       h1 {
-        font-size: 27px;
+        font-size: 38px;
       }
 
-      .content {
-        padding: 25px 20px;
+      .hero-text {
+        font-size: 16px;
       }
 
-      h2 {
-        font-size: 21px;
+      .article {
+        padding: 28px 20px;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .app-info {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .cta {
+        margin: 0 20px 28px;
+        padding: 25px;
+      }
+
+      .top-link {
+        display: none;
       }
     }
   </style>
@@ -135,80 +526,343 @@
 
 <body>
 
-  <div class="page">
-
-    <header class="hero">
-      <h1>P999 Game Apk: Download Latest Version 2026</h1>
-      <p class="subtitle">
-        An informative overview of the P999 Game APK, its mobile experience,
-        installation considerations, and responsible use.
-      </p>
-    </header>
-
-    <main class="content">
-
-      <h2>Understanding P999 Game APK</h2>
-
-      <p>
-        P999 Game APK is a mobile-focused gaming application that may interest
-        users looking for convenient digital entertainment on Android devices.
-        The latest 2026 version may include interface improvements, updated
-        features, performance adjustments, and access to games through a
-        mobile-friendly environment. Before downloading any APK, users should
-        verify that the version comes from a trustworthy source and is
-        compatible with their device.
-      </p>
-
-      <p>
-        Users researching the <a href="https://apkkit.net/p999-game/" target="_blank" rel="noopener noreferrer">P999</a>
-        platform can find information about the <strong>P999 Game</strong>,
-        including version details and general installation guidance. Checking
-        current information before installation is useful because application
-        versions, requirements, and availability can change over time.
-      </p>
-
-      <h2>Important Considerations Before Installation</h2>
-
-      <p>
-        Installing an APK from an unknown location can create security and
-        privacy concerns. Users should carefully review the source, requested
-        permissions, and application information before proceeding. A few basic
-        checks can help create a safer installation process:
-      </p>
-
-      <ul>
-        <li>Verify the APK version and compatibility with your Android device.</li>
-        <li>Use a reputable source and avoid suspicious download pages.</li>
-        <li>Review requested permissions before installing the application.</li>
-        <li>Keep Android security features and device software up to date.</li>
-      </ul>
-
-      <h2>Explore the Latest P999 Version</h2>
-
-      <p>
-        The latest P999 Game APK can be relevant to users who want to explore
-        mobile gaming through an accessible Android interface. However, users
-        should understand the application's features and terms before creating
-        an account or using any service that involves personal information or
-        financial transactions.
-      </p>
-
-      <div class="note">
-        <strong>Responsible use:</strong> If the application includes
-        chance-based games or monetary features, users should understand the
-        applicable rules and local regulations. Outcomes are not guaranteed,
-        and users should avoid spending money they cannot afford to lose.
+  <!-- TOP NAVIGATION -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="brand-icon">P9</div>
+        P999 Guide
       </div>
 
-    </main>
-
-    <footer class="footer">
-      Informational content about P999 Game APK and mobile gaming.
-    </footer>
-
+      <a class="top-link" href="#guide">
+        2026 Download & Installation Guide
+      </a>
+    </div>
   </div>
 
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="container hero-grid">
+
+      <div>
+        <div class="badge">
+          <span class="badge-dot"></span>
+          UPDATED GUIDE • 2026
+        </div>
+
+        <h1>
+          P999 Game APK
+          <span>Latest Version 2026</span>
+        </h1>
+
+        <p class="hero-text">
+          Discover what P999 Game APK is, how Android APK installation works,
+          what to check before downloading, and the key things users should
+          understand before accessing an online gaming platform.
+        </p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary"
+             href="https://apkkit.net/p999-game/"
+             target="_blank"
+             rel="noopener noreferrer">
+            Explore P999 Game →
+          </a>
+
+          <a class="btn btn-light" href="#guide">
+            Read Full Guide
+          </a>
+        </div>
+      </div>
+
+
+      <!-- APP SUMMARY -->
+      <div class="app-card">
+
+        <div class="app-logo">P9</div>
+
+        <h2>P999 Game APK</h2>
+
+        <p class="app-card-sub">
+          Mobile gaming information & installation guide
+        </p>
+
+        <div class="app-info">
+
+          <div class="info-item">
+            <small>PLATFORM</small>
+            <strong>Android</strong>
+          </div>
+
+          <div class="info-item">
+            <small>CONTENT</small>
+            <strong>Gaming</strong>
+          </div>
+
+          <div class="info-item">
+            <small>GUIDE</small>
+            <strong>2026 Edition</strong>
+          </div>
+
+          <div class="info-item">
+            <small>ACCESS</small>
+            <strong>Mobile Friendly</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- CONTENT -->
+  <main class="container">
+
+    <div class="main-card">
+
+      <article class="article" id="guide">
+
+        <h2>What Is P999 Game APK?</h2>
+
+        <p class="intro">
+          P999 Game APK is a mobile gaming application that has attracted
+          attention from Android users looking for an alternative way to access
+          digital gaming content. An APK is the Android application package
+          used to install software outside the traditional app-store
+          installation process. Because APK files come from different sources,
+          checking the source and application information is an important part
+          of the download process.
+        </p>
+
+        <p>
+          The <a href="https://apkkit.net/p999-game/"
+                  target="_blank"
+                  rel="noopener noreferrer">P999 Game</a>
+          experience can vary depending on the application version and the
+          specific distribution source. Users researching P999 should therefore
+          check the latest available information instead of relying on an old
+          APK file, outdated screenshots, or unsupported promotional claims.
+        </p>
+
+
+        <!-- FEATURES -->
+        <h2>Why Users Search for P999</h2>
+
+        <p>
+          Interest in P999 generally comes from users who want a mobile-first
+          gaming interface that is easy to access. Before installing any
+          application, it is useful to understand what the service offers and
+          whether it matches your device and personal requirements.
+        </p>
+
+        <div class="feature-grid">
+
+          <div class="feature">
+            <div class="feature-icon">01</div>
+            <h3>Mobile Experience</h3>
+            <p>
+              Designed around convenient access from compatible mobile devices
+              and modern browsers.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">02</div>
+            <h3>Simple Access</h3>
+            <p>
+              Users can research the application, installation process, and
+              available features from one central guide.
+            </p>
+          </div>
+
+          <div class="feature">
+            <div class="feature-icon">03</div>
+            <h3>Updated Information</h3>
+            <p>
+              Checking current version details helps avoid outdated files and
+              unnecessary installation problems.
+            </p>
+          </div>
+
+        </div>
+
+
+        <!-- INSTALLATION -->
+        <h2>How to Install P999 APK on Android</h2>
+
+        <p>
+          Android users should take a few basic precautions before installing
+          an APK file. The process itself is straightforward, but the source
+          of the file is just as important as the installation procedure.
+        </p>
+
+        <div class="steps">
+
+          <div class="step">
+            <div class="step-number">1</div>
+            <div>
+              <h3>Check the Source</h3>
+              <p>
+                Use a trusted page and verify that the download address is the
+                one you intended to visit.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div>
+              <h3>Review Compatibility</h3>
+              <p>
+                Check your Android version, available storage, and other
+                requirements before starting the installation.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div>
+              <h3>Download the APK</h3>
+              <p>
+                Download the current file from a source you trust and avoid
+                modified or suspicious APK packages.
+              </p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <div>
+              <h3>Install Carefully</h3>
+              <p>
+                If Android requests permission for an external installation,
+                review the warning and only continue when you trust the source.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- SAFETY -->
+        <h2>Things to Check Before Downloading</h2>
+
+        <p>
+          APK installation requires more attention than downloading an app
+          through an official store. Users should inspect the download source,
+          application permissions, file details, and device security settings.
+          Keeping Android security tools active is also useful when installing
+          software from outside an official marketplace.
+        </p>
+
+        <div class="notice">
+          <strong>Security reminder:</strong>
+          Never share passwords, OTP codes, banking credentials, wallet PINs,
+          or other sensitive information with an unknown person claiming to
+          provide P999 support. If an APK requests unusual permissions that
+          are unrelated to its purpose, stop and investigate before continuing.
+        </div>
+
+
+        <!-- INFORMATIVE ARTICLE -->
+        <h2>P999 Game in 2026</h2>
+
+        <p>
+          Online gaming applications can change quickly, with new versions,
+          interface updates, compatibility changes, and different distribution
+          sources appearing over time. For that reason, a reliable P999
+          resource should focus on current information rather than repeating
+          the same generic download paragraph found across multiple websites.
+        </p>
+
+        <p>
+          If you are researching P999 for the first time, start by identifying
+          the exact application you are looking for. Check its source, review
+          the installation requirements, and understand whether any financial
+          features are involved. This approach can help distinguish ordinary
+          entertainment software from services that may involve monetary risk.
+        </p>
+
+
+        <!-- FAQ -->
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq">
+
+          <details>
+            <summary>What is P999 Game APK?</summary>
+            <p>
+              P999 Game APK refers to an Android application package associated
+              with the P999 gaming experience. Users should verify the exact
+              application and source before installation.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can I install an APK on Android?</summary>
+            <p>
+              Android devices can support APK installation from outside the
+              Play Store, subject to device security settings and compatibility.
+              Always verify the source before installing.
+            </p>
+          </details>
+
+          <details>
+            <summary>Should I use an old P999 APK?</summary>
+            <p>
+              It is generally better to verify current application information
+              rather than relying on an outdated APK, because older files may
+              have compatibility or security concerns.
+            </p>
+          </details>
+
+          <details>
+            <summary>Is P999 suitable for everyone?</summary>
+            <p>
+              Users should review the application's features, terms, age
+              requirements, local regulations, and any financial risks before
+              deciding whether to use an online gaming service.
+            </p>
+          </details>
+
+        </div>
+
+      </article>
+
+
+      <!-- FINAL CTA -->
+      <div class="cta">
+
+        <div>
+          <h2>Looking for More P999 Information?</h2>
+
+          <p>
+            Explore the dedicated P999 page for additional information about
+            the game and its Android APK.
+          </p>
+        </div>
+
+        <a class="btn"
+           href="https://apkkit.net/p999-game/"
+           target="_blank"
+           rel="noopener noreferrer">
+          Visit P999 Guide →
+        </a>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+    © 2026 P999 Game Information Guide · For informational and entertainment purposes.
+  </footer>
+
 </body>
-</html></pre>
-        </body>
-    </html>
+</html>
